@@ -3,9 +3,8 @@ namespace Germania\Worlds;
 
 use Germania\Worlds\Exceptions\WorldNotFoundException;
 use Germania\Worlds\Exceptions\DatabaseException;
-use Interop\Container\ContainerInterface;
 
-class Worlds implements \IteratorAggregate, \Countable, ContainerInterface
+class Worlds implements WorldsInterface
 {
     public $worlds = array();
 
