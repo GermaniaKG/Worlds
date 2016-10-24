@@ -14,9 +14,9 @@ $ composer require germania-kg/worlds
 
 ##Usage
 
-The *Worlds* class reads all worlds from the database. It implements the [container-interop](https://github.com/container-interop/container-interop) (upcoming [PSR 11](https://github.com/php-fig/fig-standards/blob/master/proposed/container.md) standard) interface. 
+The *Worlds* class reads all worlds from the database. Its *WorldsInterface* extends the [container-interop](https://github.com/container-interop/container-interop) (upcoming [PSR 11](https://github.com/php-fig/fig-standards/blob/master/proposed/container.md) standard) as well as [*IteratorAggregate*](http://php.net/manual/de/class.iteratoraggregate.php), and [SPL Countable](http://php.net/manual/de/class.countable.php).
 
-You can iterate over it all worlds due to its [*IteratorAggregate*](http://php.net/manual/de/class.iteratoraggregate.php) interface, and you can retrieve single *World* instances:
+To retrieve a single *World* instance:
 
 ```php
 <?php
