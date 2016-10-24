@@ -41,7 +41,7 @@ Develop using `develop` branch, using [Git Flow](https://github.com/nvie/gitflow
 **Currently, no tests are specified.**
 
 ```bash
-$ git clone git@github.com:GermaniaKG/FilterIterators.git germania-worlds
+$ git clone git@github.com:GermaniaKG/Worlds.git germania-worlds
 $ cd germania-worlds
 $ cp phpunit.xml.dist phpunit.xml
 $ phpunit
