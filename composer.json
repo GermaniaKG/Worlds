@@ -1,8 +1,7 @@
 {
-	"name":        "germania/worlds",
+	"name":        "germania-kg/worlds",
 
-	"type":        "project",
-	"description": "The product worlds of Germania KG, Altenholz",
+	"type":        "library",
 	"license":     "proprietary",
 
 	"authors": [
