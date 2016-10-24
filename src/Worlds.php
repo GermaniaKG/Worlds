@@ -32,7 +32,7 @@ class Worlds implements \IteratorAggregate, \Countable, ContainerInterface
         $stmt->setFetchMode( \PDO::FETCH_CLASS, $world ? get_class($world) : World::class );
 
         if (!$stmt->execute()):
-            throw new DatabaseException("Could not retrieve Fachhaendler Worlds from database");
+            throw new DatabaseException("Could not retrieve Worlds from database");
         endif;
 
         $this->worlds = $stmt->fetchAll(\PDO::FETCH_UNIQUE);
