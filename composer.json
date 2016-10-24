@@ -1,0 +1,32 @@
+{
+	"name":        "germania/worlds",
+
+	"type":        "project",
+	"description": "The product worlds of Germania KG, Altenholz",
+	"license":     "proprietary",
+
+	"authors": [
+		{
+			"name":  "Carsten Witt",
+			"email": "carstenwitt@germania-kg.de",
+			"role":  "Developer"
+		}
+	],
+
+  "autoload": {
+      "psr-4": {
+          "Germania\\Worlds\\": "src/"
+      }
+  },
+
+
+	"require": {
+		"container-interop/container-interop": "^1.1"
+	},
+
+	"require-dev": {
+			"satooshi/php-coveralls": "^1.0",
+			"phpunit/phpunit": "^5.2"
+	}
+
+}
