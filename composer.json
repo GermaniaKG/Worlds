@@ -18,6 +18,9 @@
       }
   },
 
+  "autoload-dev": {
+      "psr-4": { "tests\\": "tests/src" }
+  },
 
 	"require": {
 		"container-interop/container-interop": "^1.1"
