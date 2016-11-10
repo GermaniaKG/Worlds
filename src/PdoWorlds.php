@@ -7,13 +7,20 @@ class PdoWorlds extends Worlds implements WorldsInterface
 {
     public $worlds = array();
 
+    public $worlds_table = "germania_world";
 
-    public function __construct( \PDO $pdo, WorldInterface $world = null )
+    /**
+     * @param \PDO                $pdo          PDO Instance
+     * @param WorldInterface|null $world        WorldsInterface instance result template (optional)
+     * @param [type]              $worlds_table Custom table name (optional)
+     */
+    public function __construct( \PDO $pdo, WorldInterface $world = null, $worlds_table = null )
     {
         $this->worlds = new \ArrayObject;
+        $this->worlds_table = $worlds_table ?: $this->worlds_table;
 
         // ID is listed twice here in order to use it with FETCH_UNIQUE as array key
-        $sql = 'SELECT
+        $sql = "SELECT
         id,
         id                AS id,
         world_name        AS name,
@@ -21,8 +28,8 @@ class PdoWorlds extends Worlds implements WorldsInterface
         world_url         AS slug,
         world_photo       AS photo
 
-        FROM germania_world
-        WHERE is_active > 0';
+        FROM {$this->worlds_table}
+        WHERE is_active > 0";
 
         $stmt = $pdo->prepare( $sql );
 
