@@ -1,4 +1,4 @@
-#Germania KG · Worlds
+# Germania KG · Worlds
 
 **A _World_ is a theoretical concept to put similar products into a common theoretical drawer, somehow.**
 
