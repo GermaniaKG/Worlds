@@ -1,6 +1,6 @@
 #Germania KG · Worlds
 
-A *World* is a theoretical concept to put similar products into a common theoretical drawer, somehow. 
+**A _World_ is a theoretical concept to put similar products into a common theoretical drawer, somehow.**
 
 
 ## Installation
@@ -16,7 +16,7 @@ $ composer require germania-kg/worlds
 
 The *Worlds* class reads all worlds from the database. Its *WorldsInterface* extends the [container-interop](https://github.com/container-interop/container-interop) (upcoming [PSR 11](https://github.com/php-fig/fig-standards/blob/master/proposed/container.md) standard) as well as [*IteratorAggregate*](http://php.net/manual/de/class.iteratoraggregate.php), and [SPL Countable](http://php.net/manual/de/class.countable.php).
 
-To retrieve a single *World* instance:
+**To retrieve a single *World* instance:**
 
 ```php
 <?php
@@ -34,15 +34,26 @@ echo $my_world->getName();
 ?>
 ```
 
+## Issues
 
-## Development and Testing
+See [issues list.][i0]
 
-Develop using `develop` branch, using [Git Flow](https://github.com/nvie/gitflow).   
-**Currently, no tests are specified.**
+[i0]: https://github.com/GermaniaKG/Worlds/issues 
+
+
+## Development
 
 ```bash
 $ git clone git@github.com:GermaniaKG/Worlds.git germania-worlds
 $ cd germania-worlds
-$ cp phpunit.xml.dist phpunit.xml
-$ phpunit
+$ composer install
+```
+
+## Unit tests
+
+Either copy `phpunit.xml.dist` to `phpunit.xml` and adapt to your needs, or leave as is. 
+Run [PhpUnit](https://phpunit.de/) like this:
+
+```bash
+$ vendor/bin/phpunit
 ```
