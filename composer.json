@@ -2,7 +2,7 @@
 	"name":        "germania-kg/worlds",
 
 	"type":        "library",
-	"license":     "proprietary",
+	"license":     "MIT",
 
 	"authors": [
 		{
