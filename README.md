@@ -2,6 +2,10 @@
 
 **A _World_ is a theoretical concept to put similar products into a common theoretical drawer, somehow.**
 
+[![Build Status](https://travis-ci.org/GermaniaKG/Worlds.svg?branch=master)](https://travis-ci.org/GermaniaKG/Worlds)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GermaniaKG/Worlds/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Worlds/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/Worlds/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Worlds/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/GermaniaKG/Worlds/badges/build.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Worlds/build-status/master)
 
 ## Installation
 
