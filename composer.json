@@ -23,12 +23,17 @@
   },
 
 	"require": {
-		"container-interop/container-interop": "^1.1"
+		"container-interop/container-interop": "^1.1",
+		"psr/container": "^1.0"
 	},
 
 	"require-dev": {
 			"satooshi/php-coveralls": "^1.0",
-			"phpunit/phpunit": "^5.2"
+			"phpunit/phpunit": "^5.7|^6.0"
+	},
+
+	"suggest": {
+		"pimple/pimple": "Pimple DI container"
 	}
 
 }
