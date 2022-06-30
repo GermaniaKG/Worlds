@@ -14,7 +14,7 @@ class PdoWorlds extends Worlds implements WorldsInterface
      * @param WorldInterface|null $world        WorldsInterface instance result template (optional)
      * @param [type]              $worlds_table Custom table name (optional)
      */
-    public function __construct( \PDO $pdo, WorldInterface $world = null, $worlds_table = null )
+    public function __construct( \PDO $pdo, WorldInterface $world = null, string $worlds_table = null )
     {
         $this->worlds = new \ArrayObject;
         $this->worlds_table = $worlds_table ?: $this->worlds_table;

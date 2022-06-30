@@ -9,7 +9,7 @@ class Worlds implements WorldsInterface
     public $worlds = array();
 
 
-    public function push( WorldInterface $world )
+    public function push( WorldInterface $world ) : self
     {
         $this->worlds[ $world->getId() ] = $world;
         return $this;
@@ -41,7 +41,7 @@ class Worlds implements WorldsInterface
      * @implements ContainerInterface
      * @return boolean
      */
-    public function has ($id_or_slug )
+    public function has ($id_or_slug ) : bool
     {
         foreach ($this->worlds as $world) {
             if ($world->getId() == $id_or_slug
@@ -56,7 +56,7 @@ class Worlds implements WorldsInterface
     /**
      * @implements IteratorAggregate
      */
-    public function getIterator()
+    public function getIterator() : \Traversable
     {
         return new \ArrayIterator($this->worlds);
     }
@@ -65,7 +65,7 @@ class Worlds implements WorldsInterface
     /**
      * @implements Countable
      */
-    public function count()
+    public function count() : int
     {
         return count($this->worlds);
     }

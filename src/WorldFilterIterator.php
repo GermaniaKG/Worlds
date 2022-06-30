@@ -12,7 +12,7 @@ class WorldFilterIterator extends \FilterIterator
         $this->world_id = $world->getId();
     }
 
-    public function accept()
+    public function accept() : bool
     {
         $current = $this->getInnerIterator()->current();
         return ($current instanceOf WorldsProviderInterface

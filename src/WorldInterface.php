@@ -3,10 +3,10 @@ namespace Germania\Worlds;
 
 interface WorldInterface
 {
-    public function getId();
-    public function getName();
-    public function getSlug();
-    public function getDescription();
-    public function getPhoto();
+    public function getId() : ?int;
+    public function getName() : ?string;
+    public function getSlug() : ?string;
+    public function getDescription() : ?string;
+    public function getPhoto() : ?string;
 }
 
